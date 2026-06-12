@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seu presente está a caminho ❤️</title>
+  <meta name="description" content="Cartão de presente especial de Dia dos Namorados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <section class="hero" aria-label="Cartão de Dia dos Namorados">
+      <p class="eyebrow">Dia dos Namorados</p>
+      <h1>Um presente feito com carinho</h1>
+      <p class="subtitle">O presente ainda está a caminho, mas cada clique revela uma lembrança especial.</p>
+
+      <div class="card-stage">
+        <button class="gift-card" id="giftCard" type="button" aria-label="Avançar para a próxima imagem do cartão">
+          <span class="card-face">
+            <img id="cardImage" src="assets/frente-cartao.png" alt="Frente do cartão de Dia dos Namorados" />
+          </span>
+        </button>
+       <!-- <p class="sequence-title" id="sequenceTitle">Cartão de abertura</p> -->
+        <div class="progress" id="progressDots" aria-label="Progresso das imagens"></div>
+      </div>
+
+      <div class="actions">
+        <button class="primary" id="flipButton" type="button">Próximo Cartão</button>
+        <button class="secondary" id="openMessage" type="button">Ler mensagem</button>
+      </div>
+
+      <p class="hint">Toque no cartão para passar pelas imagens na sequência.</p>
+    </section>
+  </main>
+
+  <dialog class="message-modal" id="messageModal">
+    <button class="close" id="closeMessage" type="button" aria-label="Fechar mensagem">×</button>
+    <div class="modal-content">
+      <span class="heart">♥</span>
+      <h2>Para você, meu amor</h2>
+      <p>
+        Hoje eu queria que seu presente já estivesse em suas mãos, mas ele ainda está chegando.
+        Então preparei este cartão para te entregar um pedacinho do carinho que coloquei na escolha dele.
+      </p>
+      <p class="signature">Com amor, Renato</p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
